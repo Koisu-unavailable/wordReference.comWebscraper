@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wordReference.comScraper", "wordReference.comScraper\wordReference.comScraper.csproj", "{AB9441FE-A0A0-44D3-9CEC-2D2BB7BFAEB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordReferenceScraper", "..\WordReferenceScraper\WordReferenceScraper.csproj", "{A1FF5DB3-A1BB-4161-8F9D-A1D0B2CBAD93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wordReferenceTests", "wordReferenceTests\wordReferenceTests.csproj", "{4DC791A0-A9E6-4C68-9288-D0A194C344F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "runRandomPiecesOfCode", "runRandomPiecesOfCode\runRandomPiecesOfCode.csproj", "{0615C37B-EB98-4F3D-8249-B2BC8AECD4DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{AB9441FE-A0A0-44D3-9CEC-2D2BB7BFAEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB9441FE-A0A0-44D3-9CEC-2D2BB7BFAEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB9441FE-A0A0-44D3-9CEC-2D2BB7BFAEB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1FF5DB3-A1BB-4161-8F9D-A1D0B2CBAD93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1FF5DB3-A1BB-4161-8F9D-A1D0B2CBAD93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1FF5DB3-A1BB-4161-8F9D-A1D0B2CBAD93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1FF5DB3-A1BB-4161-8F9D-A1D0B2CBAD93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC791A0-A9E6-4C68-9288-D0A194C344F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC791A0-A9E6-4C68-9288-D0A194C344F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC791A0-A9E6-4C68-9288-D0A194C344F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC791A0-A9E6-4C68-9288-D0A194C344F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0615C37B-EB98-4F3D-8249-B2BC8AECD4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0615C37B-EB98-4F3D-8249-B2BC8AECD4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0615C37B-EB98-4F3D-8249-B2BC8AECD4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0615C37B-EB98-4F3D-8249-B2BC8AECD4DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

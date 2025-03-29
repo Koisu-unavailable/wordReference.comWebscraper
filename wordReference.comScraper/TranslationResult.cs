@@ -1,4 +1,4 @@
-namespace wordReference.comScraper
+namespace wordReferencecomScraper
 {
     public enum TranslationResult
     {
