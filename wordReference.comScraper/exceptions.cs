@@ -1,7 +1,7 @@
 namespace exceptions;
-using System;
 
-[System.Serializable]
+
+[Serializable]
 public class InvalidLanguageException : System.Exception
 {
     public InvalidLanguageException() { }

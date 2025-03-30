@@ -1,7 +1,7 @@
 using HtmlAgilityPack;
 using wordReferencecomScraper;
 
-namespace wordReference.comScraper
+namespace wordReferencecomScraper
 {
     public class TranslationGetter
     {
@@ -23,36 +23,39 @@ namespace wordReference.comScraper
             return Array.Empty<string>();
 
         }
-        public static string? getCurrentWord(HtmlNode translationElement, string toFrom){
-            if (translationElement.Id.ToLower().Contains(toFrom) && translationElement.Id != string.Empty){
-                string currentWord = HtmlEntity.DeEntitize(translationElement.ChildNodes.Where(n => n.HasClass("FrWrd"))
-                .First()
-                .ChildNodes // IT'S BOLDED IN A <strong> ELEMENT AHHHH
-                .First()
-                .InnerText);
+        public static string? GetCurrentWord(HtmlNode translationElement, string toFrom)
+        {
+            if (translationElement.Id.ToLower().Contains(toFrom) && translationElement.Id != string.Empty)
+            {
+                string currentWord = HtmlEntity.DeEntitize(translationElement.ChildNodes
+                .ToArray()
+                [1]
+                .InnerText
+                );
                 return currentWord;
             }
             return null;
-            
+
         }
-        public static string mostLanguages(HtmlNode translationElement){
+        public static string MostLanguages(HtmlNode translationElement)
+        {
             {
-                
+
                 HtmlNodeCollection children = translationElement.ChildNodes;
 
-            foreach (HtmlNode child in children)
-            {
-
-                if (child.HasClass("ToWrd"))
+                foreach (HtmlNode child in children)
                 {
-                    // Console.OutputEncoding = System.Text.Encoding.UTF8; 
-                    string transText = HtmlEntity.DeEntitize(child.InnerText);
-                    return transText;
-                }
 
-            }
-            return "";
-                
+                    if (child.HasClass("ToWrd"))
+                    {
+                        // Console.OutputEncoding = System.Text.Encoding.UTF8; 
+                        string transText = HtmlEntity.DeEntitize(child.InnerText);
+                        return transText;
+                    }
+
+                }
+                return "";
+
 
 
             }

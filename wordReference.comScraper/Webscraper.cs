@@ -2,7 +2,6 @@
 using exceptions;
 using HtmlAgilityPack;
 using Microsoft.VisualBasic;
-using wordReference.comScraper;
 namespace wordReferencecomScraper;
 
 public class Webscraper
@@ -40,31 +39,31 @@ public class Webscraper
                 continue;
             }
 
-            string currentWord = TranslationGetter.getCurrentWord(translationElement, toFrom) ?? word;
+            string currentWord = TranslationGetter.GetCurrentWord(translationElement, toFrom) ?? word;
             switch (toFrom[2..4])
             {
                 case "ja":           
                     try
                     {
-                        TranslationGetter.Japanese(translationElement).ToList().ForEach(translatedWord => translations[word].Add(translatedWord));
+                        TranslationGetter.Japanese(translationElement).ToList().ForEach(translatedWord => translations[currentWord].Add(translatedWord));
 
                     }
                     catch (KeyNotFoundException ex)
                     {
-                        translations.Add(word, new List<string>());
-                        TranslationGetter.Japanese(translationElement).ToList().ForEach(translatedWord => translations[word].Add(translatedWord));
+                        translations.Add(currentWord, new List<string>());
+                        TranslationGetter.Japanese(translationElement).ToList().ForEach(translatedWord => translations[currentWord].Add(translatedWord));
                     }
                     continue;
                 default:
                     try
                     {
-                        translations[word].Add(TranslationGetter.mostLanguages(translationElement));
+                        translations[currentWord].Add(TranslationGetter.MostLanguages(translationElement));
 
                     }
                     catch (KeyNotFoundException ex)
                     {
                         translations.Add(word, new List<string>());
-                        translations[word].Add(TranslationGetter.mostLanguages(translationElement));
+                        translations[currentWord].Add(TranslationGetter.MostLanguages(translationElement));
                     }
                     break;
 
