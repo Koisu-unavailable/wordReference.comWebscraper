@@ -23,7 +23,7 @@ namespace wordReferencecomScraper
             return Array.Empty<string>();
 
         }
-        public static string? GetCurrentWord(HtmlNode translationElement, string toFrom)
+        public static string GetCurrentWord(HtmlNode translationElement, string toFrom)
         {
             if (translationElement.Id.ToLower().Contains(toFrom) && translationElement.Id != string.Empty)
             {
@@ -34,7 +34,7 @@ namespace wordReferencecomScraper
                 );
                 return currentWord;
             }
-            return null;
+            throw new NullReferenceException("Current word not found");
 
         }
         public static string MostLanguages(HtmlNode translationElement)

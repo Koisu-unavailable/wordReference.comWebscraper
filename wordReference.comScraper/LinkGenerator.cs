@@ -1,4 +1,4 @@
-using exceptions;
+using wordReferenceExceptions;
 
 namespace wordReferencecomScraper
 {

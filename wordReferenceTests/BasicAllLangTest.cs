@@ -14,5 +14,14 @@ public class BasicAllLangTest
     public void FrEnTest(){
         Assert.AreEqual("bell n", new Webscraper().GetTranslation("cloche", "fren").FirstResult());
     }
+    [TestMethod]
+    public void EnJaTest(){
+        Assert.AreEqual("テスト ", new Webscraper().GetTranslation("test", "enja").FirstResult());
+
+    }
+    [TestMethod]
+    public void EnDetest(){
+        Assert.AreEqual("Schularbeit, Klassenarbeit Nf", new Webscraper().GetTranslation("test", "ende").FirstResult());
+    }
     
 }

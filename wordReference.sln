@@ -9,8 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordReferenceScraper", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wordReferenceTests", "wordReferenceTests\wordReferenceTests.csproj", "{4DC791A0-A9E6-4C68-9288-D0A194C344F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "runRandomPiecesOfCode", "runRandomPiecesOfCode\runRandomPiecesOfCode.csproj", "{0615C37B-EB98-4F3D-8249-B2BC8AECD4DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wordReferenceCLI", "wordReferenceCLI\wordReferenceCLI.csproj", "{BB10A9B3-12D6-42F2-8BCB-A77AAE5E027B}"
 EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +37,13 @@ Global
 		{0615C37B-EB98-4F3D-8249-B2BC8AECD4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0615C37B-EB98-4F3D-8249-B2BC8AECD4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0615C37B-EB98-4F3D-8249-B2BC8AECD4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB10A9B3-12D6-42F2-8BCB-A77AAE5E027B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB10A9B3-12D6-42F2-8BCB-A77AAE5E027B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB10A9B3-12D6-42F2-8BCB-A77AAE5E027B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB10A9B3-12D6-42F2-8BCB-A77AAE5E027B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B717C43-F0E3-483D-A0F8-30D0A1A88879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B717C43-F0E3-483D-A0F8-30D0A1A88879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B717C43-F0E3-483D-A0F8-30D0A1A88879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B717C43-F0E3-483D-A0F8-30D0A1A88879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
